@@ -49,9 +49,17 @@ const handleEdit = (id) => {
     <div className='App'>
       <div className='container'>
         <h1>Todo List App</h1>
-       <TodoForm handleSubmit={handleSubmit} todo={todo} setTodo={setTodo} editId={editId}/>
+       <TodoForm 
+       handleSubmit={handleSubmit} 
+       todo={todo} setTodo={setTodo}
+       editId={editId}
+       />
 
-        <TodoList handleDelete={handleDelete} handleEdit={handleEdit} todos={todos} />
+        <TodoList 
+        handleDelete={handleDelete} 
+        handleEdit={handleEdit} 
+        todos={todos} 
+        />
       </div>
       </div>
   );
